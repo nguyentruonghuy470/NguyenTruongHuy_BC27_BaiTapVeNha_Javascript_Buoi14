@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link " href="index.html"><i class="fa-solid fa-book"></i>Bài 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="bai2.html"><i class="fa-solid fa-book"></i>Bài 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="bai3.html"><i class="fa-solid fa-book"></i>Bài 3</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="bai4.html"><i class="fa-solid fa-book"></i>Bài 4</a>
+        </li>
+      </ul>
+      <div class="container-right">
+        <div class="container-item">
+          <h1>👋 Chương trình "Chào hỏi"</h1>
+          <div class="container-content">
+            <p>
+                💡<b>Gợi ý:</b>
+            </p>
+            <p>
+              Nên tạo một dropdown để người dùng chọn thành viên cần gửi lời chào. Cách này sẽ hạn chế người dùng nhập sai nội dung.
+            </p>
+            <p>
+              Mỗi thẻ option nên thêm value để dễ xử lý data sau khi lấy từ form.
+            </p>
+            <p>
+              Nên sử dụng câu điều kiện if...else if... else. Hoặc dùng switch case
+            </p>
+            <p>Dropdown HTML (mở rộng để xem thêm)</p>
+          </div>
+          <select class="dropdown dropdown-toggle" name="" id="selectitem" style="display: inline-block; width: 20%; margin-right: 10px; height: 45px;">
+          <option value="">Chọn thành viên</option>
+          <option value="B">Bố</option>
+          <option value="M">Mẹ</option>
+          <option value="A">Anh</option>
+          <option value="E">Em</option>
+          //Tạo tương tự cho các thành viên khác
+          </select>
+          <div class="form" style="display: inline;">
+            <button
+              id="sapsap"
+              onclick="ctChao()"
+            >Gửi Lời Chào
+            </button>
+          <div class="ketqua">
+            <p>👉<span id="kq"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
